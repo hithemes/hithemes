@@ -30,8 +30,8 @@ function classNames(...classes) {
 export default function Header() {
   return (
     <>
-      <header className="px-4 py-8">
-        <Popover className="relative bg-white">
+      <header className="absolute w-full px-4 py-8">
+        <Popover className="relative">
           <div className="max-w-screen-xl mx-auto">
             <div className="flex justify-between items-center lg:justify-start lg:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -47,7 +47,7 @@ export default function Header() {
                 </Link>
               </div>
               <div className="-mr-2 -my-2 lg:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -112,7 +112,7 @@ export default function Header() {
                       </a>
                     </Link>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
