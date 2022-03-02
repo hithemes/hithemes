@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -12,6 +14,9 @@ module.exports = {
       semibold: 600,
       bold: 700,
       "extra-bold": 800,
+    },
+    fontFamily: {
+      sans: ["Manrope", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],

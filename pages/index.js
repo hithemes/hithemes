@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "./components/Layout";
+import Hero from "./components/Hero";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
         <meta name="description" content="High-Quality Premium Themes" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Main
+      <Hero />
     </Layout>
   );
 }
