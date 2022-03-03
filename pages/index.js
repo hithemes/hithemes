@@ -77,9 +77,6 @@ export default function Home() {
               brandName="HiDocs"
               quote=""
               bgColor="bg-[#F0FFEF]"
-              imgSrc=""
-              width=""
-              height=""
             />
           </div>
         </div>
