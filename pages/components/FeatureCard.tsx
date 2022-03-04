@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-export interface SummaryInformationProps {
+export interface FeatureCardProps {
   bgColor: string;
   imgSrc?: string;
   title?: string;
@@ -10,7 +10,7 @@ export interface SummaryInformationProps {
   isImg: boolean;
 }
 
-const FeatureCard: FC<SummaryInformationProps> = ({
+const FeatureCard: FC<FeatureCardProps> = ({
   bgColor,
   imgSrc,
   title,
@@ -22,11 +22,11 @@ const FeatureCard: FC<SummaryInformationProps> = ({
   return (
     <>
       <div
-        className={`relative flex flex-col items-center ${bgColor} px-16 py-14 rounded-2xl text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4`}
+        className={`relative flex flex-col items-center ${bgColor} px-12 lg:px-16 py-14 rounded-2xl text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4`}
       >
         {isImg && <img src={imgSrc} alt={title} />}
         <h2
-          className={`text-[#030a95] text-[28px] leading-[36px] tracking-[-1px] font-bold ${
+          className={`text-[#030a95] text-lg md:text-[28px] leading-[36px] tracking-[-1px] font-bold ${
             isImg ? "mt-16" : "mt-0"
           } mb-5`}
         >

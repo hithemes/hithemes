@@ -29,8 +29,8 @@ export default function Home() {
               look.{" "}
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-[60px]">
-            <div className="flex flex-col items-start gap-[60px]">
+          <div className="grid grid-cols-2 gap-10 lg:gap-[60px]">
+            <div className="flex flex-col items-start gap-10 lg:gap-[60px]">
               <div className="flex flex-col items-center text-center">
                 <Image
                   src="/img/hidocs-logo.svg"
@@ -38,7 +38,7 @@ export default function Home() {
                   width={234}
                   height={75}
                 />
-                <p className="mt-5 text-2xl leading-8 tracking-tighter font-extra-light px-6">
+                <p className="mt-5 text-2xl leading-8 text-[#4F566B] tracking-tighter font-light px-6">
                   <span className="font-bold">HiDocs</span> helps you publish
                   beautiful documents for your users and easily share your teams
                   knowledge.
@@ -63,7 +63,7 @@ export default function Home() {
                 imgSrc="/img/customizable-and-flexible.png"
               />
             </div>
-            <div className="flex flex-col items-start gap-[60px]">
+            <div className="flex flex-col items-start gap-10 lg:gap-[60px]">
               <FeatureCard
                 isImg={true}
                 title="Beautiful & Responsive"
