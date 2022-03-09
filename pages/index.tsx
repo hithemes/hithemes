@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from './components/Layout'
 import Hero from './components/Hero'
 import FeatureCard from './components/FeatureCard'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <div className="max-w-screen-lg mx-auto px-4 lg:px-0">
-        <div className="py-20 pb-14">
+      <div className="max-w-screen-lg mx-auto px-4 lg:px-0 py-20">
+        <div className="lg:pb-20 pb-14">
           <div className="text-center mb-20">
             <span className="inline-block text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-5 text-center">
               THEME
@@ -136,6 +137,36 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <section
+        className="bg-no-repeat bg-cover lg:h-[800px] px-4 py-12 lg:py-0"
+        style={{
+          backgroundImage: 'url("/img/hero-bg.png")'
+        }}
+      >
+        <div className="max-w-screen-xl mx-auto flex flex-col-reverse sm:flex-row items-center justify-between h-full">
+          <div className="sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl text-[#03076c] sm:pr-4 mt-16 sm:mt-0 text-center sm:text-left">
+            <span className="inline-block text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-4 text-center">
+              SUPPORT
+            </span>
+            <h1 className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[68px] leading-[44px] sm:leading-[56px] lg:leading-[66px] xl:leading-[76px] font-light tracking-[-1px] md:tracking-[-1.7px] lg:tracking-[-3.5px] mb-3 lg:mb-10">
+              High-Quality <br />{' '}
+              <span className="font-bold">Customer Services</span>
+            </h1>
+            <p className="text-[#4F566B] text-lg sm:text-xl lg:text-[24px] leading-normal lg:leading-[32px] font-light tracking-[-0.8px]">
+              We know how vital customer service is, so we do all we can to
+              ensure the highest level of support possible.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/img/high-quality-customer-service.png"
+              alt="Picture of the author"
+              width={450}
+              height={384}
+            />
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
