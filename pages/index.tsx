@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Layout from "./components/Layout";
-import Hero from "./components/Hero";
-import FeatureCard from "./components/FeatureCard";
+import Head from 'next/head'
+import Layout from './components/Layout'
+import Hero from './components/Hero'
+import FeatureCard from './components/FeatureCard'
 
 export default function Home() {
   return (
@@ -12,20 +12,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <div className="max-w-screen-lg mx-auto">
-        <div className="py-20 pb-14 px-4 lg:px-0">
+      <div className="max-w-screen-lg mx-auto px-4 lg:px-0">
+        <div className="py-20 pb-14">
           <div className="text-center mb-20">
             <span className="inline-block text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-5 text-center">
               THEME
             </span>
             <h2 className="text-[36px] sm:text-[46px] lg:text-[68px] leading-[44px] sm:leading-[54px] lg:leading-[76px] tracking-[-1px] lg:tracking-[-3.5px] text-[#03076C] font-light mb-7">
-              Amazing documentation <br />{" "}
+              Amazing documentation <br />{' '}
               <span className="font-bold">starts on HiDocs!</span>
             </h2>
             <p className="max-w-xl mx-auto text-[#1A1F36] font-light text-lg sm:text-2xl">
               <span className="font-bold">HiDocs</span> is an elegantly
               designed, responsive documentation theme with a fresh, modern
-              look.{" "}
+              look.{' '}
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-10 lg:gap-[60px]">
@@ -92,7 +92,50 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div
+          className="
+            bg-[#F2F3FF]
+            rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4
+          "
+        >
+          <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+            <h2 className="text-[#03076c] text-2xl leading-[32px] font-light mb-20">
+              Inspired by how startups organize their businesses, we build clear
+              documentation for high-performance applications.
+            </h2>
+            <a
+              href="#"
+              className="
+                  inline-flex
+                  items-center
+                  bg-[#0511F2]
+                  text-white
+                  mt-8 px-10 py-3
+                  text-base
+                  font-medium
+                  border border-transparent
+                  transform transition-transform ease-linear duration-200
+                  rounded-md hover:bg-opacity-90 hover:-translate-y-1
+                "
+            >
+              Get Started with HiDocs Today
+            </a>
+            <span className="inline-block mt-3 text-sm text-[#03076c]">
+              Available in Ghost Theme Marketplace.
+            </span>
+          </div>
+          <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+            <img
+              className="
+                transform translate-x-4 rounded-md object-cover object-left-top lg:translate-y-20
+              "
+              src="/img/hidocs.png"
+              alt="App screenshot"
+              srcSet="/img/hidocs.png 2x"
+            />
+          </div>
+        </div>
       </div>
     </Layout>
-  );
+  )
 }
