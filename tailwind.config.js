@@ -19,5 +19,5 @@ module.exports = {
       sans: ['Manrope', ...defaultTheme.fontFamily.sans]
     }
   },
-  plugins: [require('@tailwindcss/aspect-ratio')]
+  plugins: [require('@tailwindcss/aspect-ratio'), require('@tailwindcss/forms')]
 }
