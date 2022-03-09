@@ -160,7 +160,7 @@ export default function Home() {
           <div className="flex items-center justify-center">
             <Image
               src="/img/high-quality-customer-service.png"
-              alt="Picture of the author"
+              alt="High Quality customer Services"
               width={450}
               height={384}
             />
@@ -195,6 +195,89 @@ export default function Home() {
                 <span>Contact Support Team</span>
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="px-4 pt-36 pb-24">
+        <div className="sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-[#03076c] sm:pr-4 mt-16 sm:mt-0 mb-24 text-center">
+          <span className="inline-block text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-4 text-center">
+            CUSTOM WORK
+          </span>
+          <h1 className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[68px] leading-[44px] sm:leading-[56px] lg:leading-[66px] xl:leading-[76px] font-light tracking-[-1px] md:tracking-[-1.7px] lg:tracking-[-3.5px] mb-3 lg:mb-6">
+            Need custom design? <br />{' '}
+            <span className="font-bold">HiThemes is here!</span>
+          </h1>
+          <p className="text-[#4F566B] text-lg sm:text-xl lg:text-[24px] leading-normal lg:leading-[32px] font-light tracking-[-0.8px]">
+            <span className="font-bold">HiThemes</span> can develop products for
+            popular platforms to meet the specific needs of its clients.
+          </p>
+        </div>
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-14">
+          <div className="flex flex-col items-center text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4">
+            <Image
+              src="/img/ghost.svg"
+              alt="Theme & Newsletter Design & Code"
+              width={142}
+              height={140}
+            />
+            <h3 className="text-[#03076C] mt-4 mb-2 text-[22px] font-bold">
+              Ghost
+            </h3>
+            <p className="text-[#4F566B] text-sm">
+              Theme & Newsletter Design & Code
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4">
+            <Image
+              src="/img/webflow.svg"
+              alt="CMS Theme Design & Code"
+              width={142}
+              height={140}
+            />
+            <h3 className="text-[#03076C] mt-4 mb-2 text-[22px] font-bold">
+              Webflow
+            </h3>
+            <p className="text-[#4F566B] text-sm">CMS Theme Design & Code</p>
+          </div>
+          <div className="flex flex-col items-center text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4">
+            <Image
+              src="/img/shopify.svg"
+              alt="E-Commerce Theme Design & Code"
+              width={142}
+              height={140}
+            />
+            <h3 className="text-[#03076C] mt-4 mb-2 text-[22px] font-bold">
+              Shopify
+            </h3>
+            <p className="text-[#4F566B] text-sm">
+              E-Commerce Theme Design & Code
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4">
+            <Image
+              src="/img/bubble.svg"
+              alt="Build Web Apps Without Code"
+              width={142}
+              height={140}
+            />
+            <h3 className="text-[#03076C] mt-4 mb-2 text-[22px] font-bold">
+              Bubble
+            </h3>
+            <p className="text-[#4F566B] text-sm">
+              Build Web Apps Without Code
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center transform transition-transform ease-linear duration-200 hover:-translate-y-4">
+            <Image
+              src="/img/react.svg"
+              alt="SAAS Startup Design & Code"
+              width={142}
+              height={140}
+            />
+            <h3 className="text-[#03076C] mt-4 mb-2 text-[22px] font-bold">
+              Landing Page
+            </h3>
+            <p className="text-[#4F566B] text-sm">SAAS Startup Design & Code</p>
           </div>
         </div>
       </div>
