@@ -198,9 +198,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-4 pt-36 pb-24">
-        <div className="sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-[#03076c] sm:pr-4 mt-16 sm:mt-0 mb-24 text-center">
-          <span className="inline-block text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-4 text-center">
+      <div className="px-4 pt-16 lg:pt-36 pb-24">
+        <div className="max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-[#03076c] sm:pr-4 mb-16 lg:mb-24 text-center">
+          <span className="inline-block text-xs sm:text-base text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-4 text-center">
             CUSTOM WORK
           </span>
           <h1 className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[68px] leading-[44px] sm:leading-[56px] lg:leading-[66px] xl:leading-[76px] font-light tracking-[-1px] md:tracking-[-1.7px] lg:tracking-[-3.5px] mb-3 lg:mb-6">
