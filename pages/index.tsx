@@ -281,6 +281,148 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <section
+        className="bg-no-repeat bg-cover px-4 pt-20 pb-44"
+        style={{
+          backgroundImage: 'url("/img/hero-bg.png")'
+        }}
+      >
+        <div className="max-w-screen-xl mx-auto h-full">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-[#03076c] sm:pr-4 mb-16 lg:mb-24 text-center">
+              <span className="inline-block text-xs sm:text-base text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-4 text-center">
+                CONTACT US
+              </span>
+              <h1 className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[68px] leading-[44px] sm:leading-[56px] lg:leading-[66px] xl:leading-[76px] font-light tracking-[-1px] md:tracking-[-1.7px] lg:tracking-[-3.5px] mb-3 lg:mb-6">
+                Do you need something? <br />{' '}
+                <span className="font-bold">Get in touch!</span>
+              </h1>
+              <p className="text-[#4F566B] text-lg sm:text-xl lg:text-[24px] leading-normal lg:leading-[32px] font-light tracking-[-0.8px]">
+                If you have any queries or want to learn more about us, please{' '}
+                <br /> fill out this form, and we will get back to you as soon
+                as possible.
+              </p>
+            </div>
+            <form action="#" method="POST" className="grid grid-cols-2 gap-2">
+              <div className="col-span-2 sm:col-span-1">
+                <label htmlFor="full-name" className="sr-only">
+                  Full name
+                </label>
+                <div className="relative">
+                  <div className="absolute top-1/2 -translate-y-1/2 left-4">
+                    <svg
+                      className="w-5 h-5"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M12.9362 9.556C13.5964 8.75349 14 7.67976 14 6.5C14 4.01472 12.2091 2 10 2C7.79086 2 6 4.01472 6 6.5C6 7.67976 6.40355 8.75349 7.06383 9.556C4.09823 10.7267 2 13.6183 2 17C2 17.5523 2.44772 18 3 18C3.55228 18 4 17.5523 4 17C4 13.6863 6.68629 11 10 11C13.3137 11 16 13.6863 16 17C16 17.5523 16.4477 18 17 18C17.5523 18 18 17.5523 18 17C18 13.6183 15.9018 10.7267 12.9362 9.556ZM12 6.5C12 8.10867 10.8896 9 10 9C9.11038 9 8 8.10867 8 6.5C8 4.89133 9.11038 4 10 4C10.8896 4 12 4.89133 12 6.5Z"
+                        fill="#8792A2"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    name="full-name"
+                    id="full-name"
+                    autoComplete="name"
+                    className="block w-full shadow-sm py-4 pr-4 pl-12 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-0 rounded-md"
+                    placeholder="Full Name"
+                  />
+                </div>
+              </div>
+              <div className="col-span-2 sm:col-span-1">
+                <label htmlFor="email" className="sr-only">
+                  Email
+                </label>
+                <div className="relative">
+                  <div className="absolute top-1/2 -translate-y-1/2 left-4">
+                    <svg
+                      className="w-5 h-5"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M4 3C2.34315 3 1 4.34315 1 6V14C1 15.6569 2.34315 17 4 17H16C17.6569 17 19 15.6569 19 14V6C19 4.34315 17.6569 3 16 3H4ZM3.29508 5.29071C3.47587 5.11103 3.72497 5 4 5H16C16.275 5 16.5241 5.11103 16.7049 5.29071L10 8.86667L3.29508 5.29071ZM3 7.4V14C3 14.5523 3.44772 15 4 15H16C16.5523 15 17 14.5523 17 14V7.4L10.4706 10.8824C10.1765 11.0392 9.82353 11.0392 9.52941 10.8824L3 7.4Z"
+                        fill="#8792A2"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    className="block w-full shadow-sm py-4 pr-4 pl-12 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-0 rounded-md"
+                    placeholder="E-mail"
+                  />
+                </div>
+              </div>
+              <div className="col-span-2">
+                <label htmlFor="message" className="sr-only">
+                  Message
+                </label>
+                <div className="relative">
+                  <div className="absolute top-5 left-4">
+                    <svg
+                      className="w-5 h-5"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M4 2C2.34314 2 1 3.34315 1 5V13C1 14.6569 2.34314 16 4 16V18C4 18.3603 4.19379 18.6927 4.50732 18.8702C4.8208 19.0477 5.20557 19.0429 5.51453 18.8575L10.277 16H16C17.6569 16 19 14.6569 19 13V5C19 3.34315 17.6569 2 16 2H4ZM3 5C3 4.44772 3.44769 4 4 4H16C16.5523 4 17 4.44772 17 5V13C17 13.5523 16.5523 14 16 14H10C9.81873 14 9.64093 14.0493 9.48547 14.1425L6 16.2338V15C6 14.4477 5.55231 14 5 14H4C3.44769 14 3 13.5523 3 13V5Z"
+                        fill="#8792A2"
+                      />
+                    </svg>
+                  </div>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={10}
+                    className="block w-full shadow-sm py-4 pr-4 pl-12 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-0 rounded-md"
+                    placeholder="Comment"
+                  ></textarea>
+                </div>
+              </div>
+              <div className="col-span-2">
+                <button
+                  type="submit"
+                  className="flex items-center justify-center w-full py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white space-x-2 bg-[#0511F2] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700"
+                >
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M9.5 2C9.5 1.44772 9.94772 1 10.5 1C11.0523 1 11.5 1.44772 11.5 2V3C11.5 3.03342 11.4984 3.06646 11.4952 3.09904C13.7798 3.56044 15.5 5.57933 15.5 8V10.382L15.9223 10.5931C16.8892 11.0766 17.5 12.0648 17.5 13.1459C17.5 14.7222 16.2222 16 14.6459 16H6.3541C4.77783 16 3.5 14.7222 3.5 13.1459C3.5 12.0648 4.11078 11.0766 5.07771 10.5931L5.5 10.382V8C5.5 5.57933 7.22019 3.56044 9.50484 3.09904C9.50164 3.06646 9.5 3.03342 9.5 3V2ZM7.5 8C7.5 6.34315 8.84315 5 10.5 5C12.1569 5 13.5 6.34315 13.5 8V11C13.5 11.3788 13.714 11.725 14.0528 11.8944L15.0279 12.382C15.3172 12.5266 15.5 12.8224 15.5 13.1459C15.5 13.6176 15.1176 14 14.6459 14H6.3541C5.88239 14 5.5 13.6176 5.5 13.1459C5.5 12.8224 5.68278 12.5266 5.97214 12.382L6.94721 11.8944C7.286 11.725 7.5 11.3788 7.5 11V8Z"
+                      fill="#F2F3FF"
+                    />
+                    <path
+                      d="M9.5 17C8.94772 17 8.5 17.4477 8.5 18C8.5 18.5523 8.94772 19 9.5 19H11.5C12.0523 19 12.5 18.5523 12.5 18C12.5 17.4477 12.0523 17 11.5 17H9.5Z"
+                      fill="#F2F3FF"
+                    />
+                  </svg>
+                  <span>Get in touch!</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
