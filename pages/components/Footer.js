@@ -56,27 +56,25 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col items-center py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
           <Link href="/">
             <a className="inline-block mb-8">
-              <Image
+              <img
+                className="w-[230px] h-[56px] md:w-[275px] md:h-[66px] lg:w-[329px] lg:h-[80px]"
                 src="/img/logo-footer.svg"
                 alt="HiThemes Logo"
-                width={329}
-                height={80}
               />
             </a>
           </Link>
           <nav
-            className="-mx-5 -my-2 flex flex-wrap justify-center space-x-8"
+            className="-mx-5 -my-2 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center space-y-3 sm:space-y-0 sm:space-x-8"
             aria-label="Footer"
           >
             {navigation.main.map((item) => (
-              <div key={item.name}>
-                <a
-                  href={item.href}
-                  className="text-base text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
-                </a>
-              </div>
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-base text-gray-500 hover:text-gray-900"
+              >
+                {item.name}
+              </a>
             ))}
           </nav>
           <div className="mt-8 flex justify-center space-x-6">
