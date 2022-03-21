@@ -109,9 +109,9 @@ export default function Home() {
               Inspired by how startups organize their businesses, we build clear
               documentation for high-performance applications.
             </h2>
-            <a
-              href="#"
-              className="
+            <Link href="https://hidocs.hithemes.io">
+              <a
+                className="
                   inline-flex
                   items-center
                   bg-[#0511F2]
@@ -123,9 +123,11 @@ export default function Home() {
                   transform transition-transform ease-linear duration-200
                   rounded-md hover:bg-opacity-90 hover:-translate-y-1
                 "
-            >
-              Get Started with HiDocs Today
-            </a>
+                target="_blank"
+              >
+                Get Started with HiDocs Today
+              </a>
+            </Link>
             <span className="inline-block mt-3 text-sm text-[#03076c]">
               Available in Ghost Theme Marketplace.
             </span>
