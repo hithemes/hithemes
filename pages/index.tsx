@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Hero from './components/Hero'
 import FeatureCard from './components/FeatureCard'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -29,14 +30,18 @@ export default function Home() {
               look.{' '}
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-10 lg:gap-[60px]">
+          <div id="themes" className="grid sm:grid-cols-2 gap-10 lg:gap-[60px]">
             <div className="flex flex-col items-start gap-10 lg:gap-[60px]">
               <div className="flex flex-col items-center text-center">
-                <img
-                  className="w-[158px] h-[50px] lg:w-[234px] lg:h-[75px]"
-                  src="/img/hidocs-logo.svg"
-                  alt="HiDocs Premium Documentation Logo"
-                />
+                <Link href="https://hidocs.hithemes.io">
+                  <a target="_blank">
+                    <img
+                      className="w-[158px] h-[50px] lg:w-[234px] lg:h-[75px]"
+                      src="/img/hidocs-logo.svg"
+                      alt="HiDocs Premium Documentation Logo"
+                    />
+                  </a>
+                </Link>
                 <p className="mt-5 text-lg sm:text-2xl leading-8 text-[#4F566B] tracking-tighter font-light px-6">
                   <span className="font-bold">HiDocs</span> helps you publish
                   beautiful documents for your users and easily share your teams
@@ -138,6 +143,7 @@ export default function Home() {
         </div>
       </div>
       <section
+        id="support"
         className="bg-no-repeat bg-cover md:h-[500px] lg:h-[800px] px-4 py-32 md:py-0"
         style={{
           backgroundImage: 'url("/img/hero-bg.png")'
@@ -198,7 +204,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-4 pt-16 lg:pt-36 pb-24">
+      <section id="custom-work" className="px-4 pt-16 lg:pt-36 pb-24">
         <div className="max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto text-[#03076c] sm:pr-4 mb-16 lg:mb-24 text-center">
           <span className="inline-block text-xs sm:text-base text-[#A3ACB9] tracking-[22px] md:tracking-[26px] lg:tracking-[34px] mb-3 lg:mb-4 text-center">
             CUSTOM WORK
@@ -280,8 +286,9 @@ export default function Home() {
             <p className="text-[#4F566B] text-sm">SAAS Startup Design & Code</p>
           </div>
         </div>
-      </div>
+      </section>
       <section
+        id="contact"
         className="bg-no-repeat bg-cover px-4 pt-20 pb-44"
         style={{
           backgroundImage: 'url("/img/hero-bg.png")'

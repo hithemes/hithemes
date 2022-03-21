@@ -7,19 +7,19 @@ const navigation = {
   main: [
     {
       name: 'Themes',
-      href: '/'
+      href: '#themes'
     },
     {
       name: 'Support',
-      href: '#'
+      href: '#support'
     },
     {
       name: 'Custom Work',
-      href: '#'
+      href: '#custom-work'
     },
     {
       name: 'Contact',
-      href: '#'
+      href: '#contact'
     }
   ],
   social: [
@@ -161,6 +161,7 @@ export default function Header() {
                       <a
                         key={item.name}
                         href={item.href}
+                        scroll={true}
                         className="text-xl font-bold text-[#03076C] text-center tracking-[-0.4px] hover:text-gray-700"
                       >
                         {item.name}
