@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Layout from './components/Layout'
-import Hero from './components/Hero'
-import FeatureCard from './components/FeatureCard'
+import Layout from '../components/layout'
+import Hero from '../components/hero'
+import FeatureCard from '../components/FeatureCard'
 import Image from 'next/image'
 import Link from 'next/link'
 
