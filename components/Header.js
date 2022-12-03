@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { World } from './icons'
 
 const navigation = {
   main: [
@@ -101,20 +102,7 @@ export default function Header() {
               <div className="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
                 <Link href="/">
                   <a className="whitespace-nowrap inline-flex items-center justify-center px-[20px] py-[13px] border border-transparent rounded-md shadow-[0px 4px 15px rgba(3, 7, 108, 0.2);] text-base font-medium text-white space-x-2 bg-[#0511F2] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                      />
-                    </svg>
+                    <World className="w-6 h-6" />
                     <span>Get Started</span>
                   </a>
                 </Link>
