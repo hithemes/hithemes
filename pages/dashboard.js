@@ -410,29 +410,91 @@ export default function Dashboard() {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                       >
-                        <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                          <Dialog.Title
-                            as="h3"
-                            className="text-lg font-medium leading-6 text-gray-900"
+                        <Dialog.Panel className="w-full max-w-2xl transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
+                          <button
+                            type="button"
+                            onClick={() => setIsReview(!isReview)}
+                            className="absolute top-6 right-6"
                           >
-                            Payment successful
-                          </Dialog.Title>
-                          <div className="mt-2">
-                            <p className="text-sm text-gray-500">
-                              Your payment has been successfully submitted.
-                              We’ve sent you an email with all of the details of
-                              your order.
+                            <XIcon className="w-6 h-6 text-gray-400 cursor-pointer" />
+                          </button>
+                          <div className="p-6">
+                            <h3 className="text-gray-800 text-lg font-semibold tracking-sm">
+                              Leave Review
+                            </h3>
+                            <p className="text-gray-600 text-sm tracking-sm">
+                              {' '}
+                              Share your review with us.
                             </p>
                           </div>
-
-                          <div className="mt-4">
-                            <button
-                              type="button"
-                              className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                              onClick={() => setIsReview(!isReview)}
-                            >
-                              Got it, thanks!
-                            </button>
+                          <div className="flex items-center justify-between bg-gray-50 py-4 px-6">
+                            <div className="flex items-center lg:gap-3">
+                              <div className="hidden lg:block w-10 h-10">
+                                <Avatar
+                                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                  alt="Halit Güvenilir"
+                                />
+                              </div>
+                              <div>
+                                <div className="tracking-[-0.5px] font-medium text-gray-800">
+                                  HiThemes
+                                </div>
+                                <div className="tracking-[-0.5px] text-gray-500">
+                                  getcapsule.com
+                                </div>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-4">
+                              <span className="text-gray-700 tracking-sm">
+                                Your Star
+                              </span>
+                              <a
+                                href="#"
+                                className="flex items-center justify-center gap-1"
+                              >
+                                <Stars className="w-5 h-5 text-yellow-400" />
+                                <Stars className="w-5 h-5 text-yellow-400" />
+                                <Stars className="w-5 h-5 text-yellow-400" />
+                                <Stars className="w-5 h-5 text-yellow-400" />
+                                <Stars className="w-5 h-5 text-gray-100" />
+                              </a>
+                            </div>
+                          </div>
+                          <div className="p-6">
+                            <form>
+                              <div className="mb-8">
+                                <label
+                                  htmlFor="yourReview"
+                                  className="block text-gray-800 mb-2 text-sm font-semibold tracking-sm"
+                                >
+                                  Your Review*
+                                </label>
+                                <div className="mt-1">
+                                  <textarea
+                                    id="yourReview"
+                                    name="yourReview"
+                                    rows={15}
+                                    className="block w-full text-gray-500 p-3 border-gray-300 rounded-md placeholder:text-gray-500 focus:border-[#1B26F3] focus:ring-[#1B26F3]"
+                                    placeholder="Type review..."
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div className="grid grid-cols-2 gap-4">
+                                <button
+                                  type="button"
+                                  className="inline-flex items-center justify-center w-full lg:w-auto bg-white text-gray-700 py-2.5 px-4 text-sm font-medium tracking-sm border border-gray-300 rounded-md transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                                  onClick={() => setIsReview(!isReview)}
+                                >
+                                  Cancel
+                                </button>
+                                <button
+                                  type="button"
+                                  className="inline-flex items-center justify-center w-full lg:w-auto bg-[#1B26F3] text-white py-2.5 px-4 text-sm font-medium tracking-sm border border-transparent rounded-md transition hover:bg-[#1B26F3] focus:outline-none focus:ring-2 focus:ring-[#1B26F3] focus:ring-offset-2"
+                                >
+                                  Delete
+                                </button>
+                              </div>
+                            </form>
                           </div>
                         </Dialog.Panel>
                       </Transition.Child>
