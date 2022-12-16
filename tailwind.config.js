@@ -39,6 +39,10 @@ module.exports = {
           200: '#7B7671',
           300: '#3D3B38'
         }
+      },
+      letterSpacing: {
+        sm: '-0.4px',
+        md: '-0.5px'
       }
     }
   },
