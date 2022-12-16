@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
@@ -18,24 +19,26 @@ module.exports = {
     fontFamily: {
       sans: ['Manrope', ...defaultTheme.fontFamily.sans]
     },
-    colors: {
-      go: {
-        50: '#E6EEED',
-        100: '#D1E0DD',
-        200: '#A2C0BC',
-        300: '#74A19A',
-        400: '#458178',
-        500: '#176257',
-        600: '#004B40',
-        700: '#003C33',
-        800: '#002D26',
-        900: '#001E19'
-      },
-      aw: {
-        50: '#F9EFE5',
-        100: '#BFB7B0',
-        200: '#7B7671',
-        300: '#3D3B38'
+    extend: {
+      colors: {
+        go: {
+          50: '#E6EEED',
+          100: '#D1E0DD',
+          200: '#A2C0BC',
+          300: '#74A19A',
+          400: '#458178',
+          500: '#176257',
+          600: '#004B40',
+          700: '#003C33',
+          800: '#002D26',
+          900: '#001E19'
+        },
+        aw: {
+          50: '#F9EFE5',
+          100: '#BFB7B0',
+          200: '#7B7671',
+          300: '#3D3B38'
+        }
       }
     }
   },
